@@ -7,7 +7,9 @@ app = Flask(__name__)
 @app.route("/")
 def main():
     return '''
+    <h1>Segment Finder</h1>
     <form action="/echo_user_input" method="POST">
+        <label for="user_input">Zip Code</label><br>
         <input name="user_input">
         <input type="submit" value="Submit!">
     </form>
