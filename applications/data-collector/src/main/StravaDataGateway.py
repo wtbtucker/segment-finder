@@ -44,7 +44,7 @@ class StravaDataGateway:
 
         res = requests.get('https://www.strava.com/api/v3/segments/starred', headers=headers)
         print(res.status_code)
-        return res.text
+        return res.json()
 
     def get_external_segment(self, id):
         headers = {

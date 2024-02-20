@@ -15,4 +15,4 @@ class Segment(db.Model):
     distance = db.Column(db.Float, nullable=False)
 
     def __repr__(self):
-        return '<Segment %r' % self.name
+        return self.name
